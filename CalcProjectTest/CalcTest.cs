@@ -1,5 +1,4 @@
-﻿using System;
-using CalcProject;
+﻿using CalcProject;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CalcProjectTest
