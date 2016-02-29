@@ -39,7 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CalcProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\CalcProject.0.36\lib\net40\CalcProject.dll</HintPath>
+      <HintPath>packages\CalcProject.0.339\lib\net451\CalcProject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
