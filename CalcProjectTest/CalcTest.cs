@@ -9,6 +9,7 @@ namespace CalcProjectTest
         [TestMethod]
         public void TestAdd()
         {
+			
             Assert.AreEqual(5, Calculator.plus(3, 2));
         }
         
