@@ -15,7 +15,7 @@
         <tags>calc, project</tags>
     </metadata>
     <files>
-    <file src="bin\Debug\*.dll" target="lib"/>
+    <file src="bin\Release\*.dll" target="lib"/>
     <!--    <file src="bin/Debug/*.dll" target="lib"/> also tried this -->
   </files>
 </package>
