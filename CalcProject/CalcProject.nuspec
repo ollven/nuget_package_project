@@ -21,7 +21,10 @@
 
             Other extensions, if needed, must be installed separately.
         </description>
-        <summary>Some summary text</summary>
+        <summary>
+            Some summary text
+            This package includes the nunit3-console runner and test engine for version 3 of the NUnit unit-testing framework.
+        </summary>
         <copyright>smth</copyright>
         <tags>calc, project</tags>
     </metadata>
