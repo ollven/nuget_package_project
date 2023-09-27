@@ -54,7 +54,6 @@ project {
             connectionId = "AmazonWebServicesAws"
             bucketName = "ollven-test"
             forceVirtualHostAddressing = true
-            verifyIntegrityAfterUpload = false
         }
         activeStorage {
             id = "PROJECT_EXT_21"
