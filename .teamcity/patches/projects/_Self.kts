@@ -43,15 +43,4 @@ changeProject(DslContext.projectId) {
         feature2.apply {
         }
     }
-
-    cleanup {
-        add {
-            keepRule {
-                id = "KEEP_RULE_7"
-                keepAtLeast = allBuilds()
-                dataToKeep = historyAndStatistics()
-                applyPerEachBranch = true
-            }
-        }
-    }
 }
