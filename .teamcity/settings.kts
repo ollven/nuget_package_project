@@ -110,7 +110,6 @@ object Build : BuildType({
             dataToKeep = historyAndStatistics {
                 preserveArtifacts = all()
             }
-            preserveArtifactsDependencies = true
         }
         keepRule {
             id = "KEEP_RULE_2"
