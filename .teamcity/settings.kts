@@ -118,7 +118,6 @@ object Build : BuildType({
                 preserveArtifacts = all()
             }
             applyPerEachBranch = true
-            preserveArtifactsDependencies = true
         }
     }
 })
