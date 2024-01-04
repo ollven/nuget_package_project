@@ -29,7 +29,7 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2023.05"
+version = "2023.11"
 
 project {
 
@@ -58,6 +58,12 @@ project {
         activeStorage {
             id = "PROJECT_EXT_21"
             activeStorageID = "PROJECT_EXT_20"
+        }
+    }
+
+    cleanup {
+        baseRule {
+            option("disableCleanupPolicies", true)
         }
     }
 }
