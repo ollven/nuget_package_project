@@ -112,5 +112,14 @@ object Build : BuildType({
             }
             preserveArtifactsDependencies = true
         }
+        keepRule {
+            id = "KEEP_RULE_2"
+            keepAtLeast = builds(1)
+            dataToKeep = historyAndStatistics {
+                preserveArtifacts = all()
+            }
+            applyPerEachBranch = true
+            preserveArtifactsDependencies = true
+        }
     }
 })
