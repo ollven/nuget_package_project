@@ -102,4 +102,15 @@ object Build : BuildType({
         perfmon {
         }
     }
+
+    cleanup {
+        keepRule {
+            id = "KEEP_RULE_1"
+            keepAtLeast = days(14)
+            dataToKeep = historyAndStatistics {
+                preserveArtifacts = all()
+            }
+            preserveArtifactsDependencies = true
+        }
+    }
 })
