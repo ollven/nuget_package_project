@@ -28,6 +28,9 @@ changeProject(DslContext.projectId) {
             }
         }
         feature1.apply {
+            name = "Amazon Web Services (AWS)Edited"
+            param("awsAllowedInSubProjects", "")
+            param("awsSessionDuration", "")
         }
         val feature2 = find<S3Storage> {
             s3Storage {
