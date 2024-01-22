@@ -28,7 +28,7 @@ changeProject(DslContext.projectId) {
             }
         }
         feature1.apply {
-            name = "Amazon Web Services (AWS) edit name only"
+            name = "Amazon Web Services (AWS) edit name only 11"
             param("awsAllowedInSubProjects", "")
             param("awsSessionDuration", "")
         }
