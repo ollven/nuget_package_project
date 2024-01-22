@@ -44,6 +44,9 @@ changeProject(DslContext.projectId) {
             }
         }
         feature2.apply {
+            awsEnvironment = default {
+                awsRegionName = ""
+            }
         }
     }
 }
