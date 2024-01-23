@@ -3,7 +3,7 @@ package patches.projects
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.Project
 import jetbrains.buildServer.configs.kotlin.projectFeatures.AwsConnection
-import jetbrains.buildServer.configs.kotlin.projectFeatures.S3Storage
+import jetbrains.buildServer.configs.kotlin.projectFeatures.activeStorage
 import jetbrains.buildServer.configs.kotlin.projectFeatures.awsConnection
 import jetbrains.buildServer.configs.kotlin.projectFeatures.s3Storage
 import jetbrains.buildServer.configs.kotlin.ui.*
@@ -29,10 +29,10 @@ changeProject(DslContext.projectId) {
         }
         feature1.apply {
             name = "Amazon Web Services (AWS) edit name only 11"
-            param("awsAllowedInSubProjects", "")
             param("awsSessionDuration", "")
+            param("awsAllowedInSubProjects", "")
         }
-        val feature2 = find<S3Storage> {
+        remove(0) {
             s3Storage {
                 id = "PROJECT_EXT_20"
                 awsEnvironment = default {
@@ -43,9 +43,10 @@ changeProject(DslContext.projectId) {
                 forceVirtualHostAddressing = true
             }
         }
-        feature2.apply {
-            awsEnvironment = default {
-                awsRegionName = ""
+        remove {
+            activeStorage {
+                id = "PROJECT_EXT_21"
+                activeStorageID = "PROJECT_EXT_20"
             }
         }
     }
