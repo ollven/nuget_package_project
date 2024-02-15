@@ -29,5 +29,26 @@ changeBuildType(RelativeId("Build")) {
                 }
             }
         }
+        expect {
+            keepRule {
+                id = "KEEP_RULE_2"
+                keepAtLeast = builds(1)
+                dataToKeep = historyAndStatistics {
+                    preserveArtifacts = all()
+                }
+                applyPerEachBranch = true
+            }
+        }
+        update {
+            keepRule {
+                disabled = true
+                id = "KEEP_RULE_2"
+                keepAtLeast = builds(1)
+                dataToKeep = historyAndStatistics {
+                    preserveArtifacts = all()
+                }
+                applyPerEachBranch = true
+            }
+        }
     }
 }
